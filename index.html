@@ -1,0 +1,270 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>My Parse App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">  
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+  <body>
+   <div class="container">
+      <!--  header -->
+      <header>
+        <nav>
+          <ul class="menu">
+            <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">How-to</a></li>
+            <li class="menu-item"><a href="#" class="menu-link active">View&nbsp;&amp;&nbsp;Vote</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Upload</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">Contest Rules</a></li>
+          </ul>
+        </nav>
+      </header> 
+      <!-- end of header -->
+      <!-- sort section -->
+      <div class="sort">
+        <div class="sort-item">
+            <label>Sort</label>
+            <select name="sort">
+              <option value="newest">Newest</option>
+              <option value="2">Newest</option>
+              <option value="3">Newest</option>
+            </select>
+        </div>
+       <div class="sort-item">
+         <label>Filter</label>
+            <select name="filter">
+              <option value="1">Select</option>
+              <option value="2">Select</option>
+              <option value="3">Select</option>
+            </select>
+       </div>
+       <div class="sort-item">
+         <form class="search">
+           <input type="search" class="search-field" placeholder="Search">
+           <button type="submit" class="search-button"></button>
+         </form>
+       </div>
+       <div class="clr"></div>
+      </div>
+      <!-- end of sort section -->
+      <!-- books container -->
+      <div class="books-container">
+      <div class="clr"></div>
+         <ul class="books-list row">
+           <li class="span3">
+             <div class="book" data-id="1">
+             <div class="img-cont"><img class="book-img" src="img/item1.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Дом Аида</div>
+                  <div class="author">Рик Риордан</div>
+                  <div class="year">2013</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="2">
+             <div class="img-cont"><img class="book-img" src="img/item2.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Тень дракона</div>
+                  <div class="author">Илона Волынская , Кирилл Кащеев</div>
+                  <div class="year">2011</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="3">
+             <div class="img-cont"><img class="book-img" src="img/item3.png" alt="item1" width="130" height="130"></div>
+                <div class="book-info">
+                  <div class="name">Страхи мудреца. Книга 1</div>
+                  <div class="author">Патрик Ротфусс</div>
+                  <div class="year">2012</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="4">
+             <div class="img-cont"><img class="book-img" src="img/item3.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Часодеи. Часовая битва</div>
+                  <div class="author">Наталья Щерба</div>
+                  <div class="year">2014</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="5">
+             <div class="img-cont"><img class="book-img" src="img/item1.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Имя ветра</div>
+                  <div class="author">Патрик Ротфусс</div>
+                  <div class="year">2010</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="6">
+               <div class="img-cont"><img class="book-img" src="img/item4.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Властелин Колец</div>
+                  <div class="author">Дж. Р. Р. Толкин</div>
+                  <div class="year">1954</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="7">
+             <div class="img-cont"><img class="book-img" src="img/item3.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Гарри Поттер и Принц-полукровка</div>
+                  <div class="author">Джоан Роулинг</div>
+                  <div class="year">2005</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="8">
+             <div class="img-cont"><img class="book-img" src="img/item3.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Игра престолов</div>
+                  <div class="author">Джордж Р. Р. Мартин</div>
+                  <div class="year">1996</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="9">
+             <div class="img-cont"><img class="book-img" src="img/item1.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Темная сторона</div>
+                  <div class="author">Макс Фрай</div>
+                  <div class="year">1997</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="10">
+             <div class="img-cont"><img class="book-img" src="img/item2.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Час Презрения</div>
+                  <div class="author">Анджей Сапковский</div>
+                  <div class="year">1995</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="11">
+             <div class="img-cont"><img class="book-img" src="img/item2.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Зеленая миля</div>
+                  <div class="author">Стивен Кинг</div>
+                  <div class="year">2007</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+           <li class="span3">
+             <div class="book" data-id="12">
+             <div class="img-cont"><img class="book-img" src="img/item2.png" alt="item1" width="130" height="130"></div>
+               <div class="book-info">
+                  <div class="name">Унесенные ветром</div>
+                  <div class="author">Маргарет Митчелл</div>
+                  <div class="year">2014</div>
+               </div>
+               <a href="#" class="add">add</a>
+               <div class="added">added</div>
+               <div class="views">12,235</div>
+             </div>
+           </li>
+         </ul>
+     </div>
+     <!-- end of books container -->
+     <!-- books navigation -->
+     <div class="books-nav">       
+       <a href="#" class="begin"></a>
+       <a href="#" class="prev"></a>
+       <a href="#" class="nav-button">1</a>
+       <a href="#" class="nav-button">2</a>
+       <a href="#" class="nav-button">3</a>
+       <a href="#" class="nav-button">4</a>
+       <a href="#" class="nav-button">5</a>
+       <a href="#" class="nav-button">6</a>
+       <a href="#" class="nav-button">7</a>
+       <a href="#" class="next"></a>
+       <a href="#" class="finish"></a>
+       <div class="clr"></div>
+     </div>
+     <!-- end of books navigation -->
+     <!-- my books -->
+     <div class="my-books">       
+       <h2>My books</h2>
+       <div class="clr"></div>
+     </div>
+     <!-- end of my books -->
+     <!-- prizes -->     
+     <div class="prizes"> 
+      <h2>Prizes</h2>     
+      <div class="inner row">
+        <div class="span4">
+         <img src="img/card.png" alt="card">
+       </div>
+       <div class="span8">
+         <h2>Two ways to win</h2>
+         <p>If your photo is one of the top 20 highest-voted pictures, it will be submitted to an Panel, who will award a $250 Gift Card to the photo that best meets the contest criteria.</p>
+         <p>Plus, for every picture you upload, you are entered into the grand prize draw for a $1,000 Gift Card!</p>
+         <p>Just want to vote? Complete the one-time registration and you too will be entered into the grand prize draw!</p>
+       </div>
+      </div>        
+     </div>
+     <!-- end of prizes -->
+     <!--  vote -->
+     <div class="vote">
+     <h2>How to Vote</h2>
+       <div class="inner row">         
+         <p>Check out each submission and vote for up to 3 photos daily!</p>
+         <p>Every day, after reviewing the photo entries, vote honestly for the 3 photos you feel best meet the following criteria: Theme (50%) and Most Creative! (50%).</p>
+         <p>Each week, the 20 highest-voted photos will be submitted to an Panel, who will award a $250 Gift Card to the photo that best meets the contest criteria.</p>
+         <p>You can only vote for the same photo once per day—come back daily to vote again!</p>
+       </div>
+     </div>
+     <!--  end of vote -->
+   </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/book.js"></script>
+  </body>
+</html>
